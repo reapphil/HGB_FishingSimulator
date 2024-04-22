@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e251860fcd970734c9f14ebd98a146c3, type: 3}
+  m_Name: GS-20240422 - 232403
+  m_EditorClassIdentifier: 
+  m_name: Session 20240422-232403
+  m_description: 'Rocking out at Creativity Central!
+
+
+    If you like Gaia please
+    consider rating it :)'
+  m_previewImage: {fileID: 0}
+  m_dateCreated: 22.04.2024 23:24:03
+  m_terrainWidth: 1024
+  m_terrainDepth: 1024
+  m_terrainHeight: 1024
+  m_seaLevel: 181.5
+  m_spawnDensity: 0.8
+  m_isLocked: 0
+  m_previewImageBytes: 
+  m_previewImageWidth: 0
+  m_previewImageHeight: 0
+  m_operations:
+  - m_description: 'Creating World: 2 x 2 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20240422 - 232422
+    - Terrain_0_1-20240422 - 232422
+    - Terrain_1_0-20240422 - 232422
+    - Terrain_1_1-20240422 - 232422
+    m_operationDateTime: 22.04.2024 23:24:22
+    scriptableObjectAssetGUID: 490d4c402540bc345bb440ff2417bd4c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - Map raw
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20240422 - 232422
+    - Terrain_0_1-20240422 - 232422
+    - Terrain_1_0-20240422 - 232422
+    - Terrain_1_1-20240422 - 232422
+    m_operationDateTime: 22.04.2024 23:28:34
+    scriptableObjectAssetGUID: 56c6724cf188cb74191b6fe574ad2008
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Alpine Meadow-Textures(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20240422 - 232422
+    - Terrain_0_1-20240422 - 232422
+    - Terrain_1_0-20240422 - 232422
+    - Terrain_1_1-20240422 - 232422
+    m_operationDateTime: 22.04.2024 23:28:36
+    scriptableObjectAssetGUID: 2b6441bce558bce47b61408ead449063
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  m_terrainMinMaxCache:
+  - guid: 1dba4c211b7835c46a718aba38a3a729
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 636.8222
+  - guid: 7faa0d1e7e9155b409bf08708d6965c5
+    isWorldmap: 0
+    recalculate: 0
+    min: 90.40763
+    max: 843.4191
+  - guid: ea75d5a00ea2da0488ee5613b7d313a6
+    isWorldmap: 0
+    recalculate: 0
+    min: 12.750195
+    max: 905.2638
+  - guid: e18ca9b99502bf94ca311004a9c8465a
+    isWorldmap: 0
+    recalculate: 0
+    min: 171.53387
+    max: 1010.64044
+  m_bakedMaskCacheEntries: []
+  m_worldBiomeMaskSettings: {fileID: 0}

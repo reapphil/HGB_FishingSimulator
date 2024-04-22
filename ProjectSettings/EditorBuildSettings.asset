@@ -8,4 +8,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Fishing Simulator.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20240422 - 232403/Terrain Scenes/Terrain_0_0-20240422
+      - 232422.unity
+    guid: ae389049812bc2c46a5241aa1320b1da
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20240422 - 232403/Terrain Scenes/Terrain_0_1-20240422
+      - 232422.unity
+    guid: a07f468c595ad934fab32f8fa7a10146
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20240422 - 232403/Terrain Scenes/Terrain_1_0-20240422
+      - 232422.unity
+    guid: f53192c37a7ea584aa42f4dff59c5d0c
+  - enabled: 1
+    path: Assets/Gaia User Data/Sessions/GS-20240422 - 232403/Terrain Scenes/Terrain_1_1-20240422
+      - 232422.unity
+    guid: d1617c4d92588754fb3d50f71c0bab89
   m_configObjects: {}
