@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 11
+  version: 13
   hdPluginSubTargetMaterialVersions:
     m_Keys: []
     m_Values: 
@@ -24,18 +24,19 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PWT_Ground_Forest_01_Heavy_Leaves
-  m_Shader: {fileID: 4800000, guid: 676d51a93fad6434bb7ee1f64ad89551, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 26e13b92150b60542b5039846beee74c,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _ALPHATEST_OFF
+  m_ValidKeywords:
   - _DISABLE_DECALS
   - _DISABLE_SSR_TRANSPARENT
+  m_InvalidKeywords:
+  - _ALPHATEST_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 2255
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses:
   - TransparentDepthPrepass
@@ -97,7 +98,7 @@ Material:
     - _AOPowerExp: 1
     - _AOVertexMask: 1
     - _AddPrecomputedVelocity: 0
-    - _AlphaCutoffEnable: 1
+    - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
     - _AlphaTest: 0
@@ -105,12 +106,14 @@ Material:
     - _AlphaToMaskInspectorValue: 0
     - _BlendMode: 0
     - _BumpMapScale: 1
+    - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
-    - _CullModeForward: 0
+    - _CullModeForward: 2
     - _Cutoff: 0.5
     - _DepthOffsetEnable: 0
     - _DiffusionProfile: 2.2732565
     - _DoubleSidedEnable: 1
+    - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
     - _EnableBlendModePreserveSpecularLighting: 0
@@ -173,10 +176,10 @@ Material:
     - _StencilRefGBuffer: 10
     - _StencilRefMV: 40
     - _StencilWriteMask: 6
-    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDepth: 9
     - _StencilWriteMaskDistortionVec: 4
-    - _StencilWriteMaskGBuffer: 14
-    - _StencilWriteMaskMV: 40
+    - _StencilWriteMaskGBuffer: 15
+    - _StencilWriteMaskMV: 41
     - _SupportDecals: 0
     - _SurfaceType: 0
     - _TransparentBackfaceEnable: 0
@@ -189,7 +192,7 @@ Material:
     - _UseShadowThreshold: 0
     - _WrapLighting: 0
     - _ZTestDepthEqualForOpaque: 3
-    - _ZTestGBuffer: 3
+    - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
