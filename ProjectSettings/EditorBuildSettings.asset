@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/FishingSim.unity
+    guid: b7cb66961cafc4b49b714c1c360dec88
+  - enabled: 1
     path: Assets/Fishing Simulator.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
   - enabled: 1
