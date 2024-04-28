@@ -29,13 +29,13 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ALPHATEST_ON
-  - _ALPHATOMASK_ON
   - _BLENDMODE_ADD
   - _DISABLE_DECALS
   - _DISABLE_SSR_TRANSPARENT
   - _ENABLE_FOG_ON_TRANSPARENT
   - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _ALPHATOMASK_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -869,10 +869,10 @@ Material:
     - _StencilRefGBuffer: 2
     - _StencilRefMV: 32
     - _StencilWriteMask: 6
-    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDepth: 9
     - _StencilWriteMaskDistortionVec: 4
-    - _StencilWriteMaskGBuffer: 14
-    - _StencilWriteMaskMV: 40
+    - _StencilWriteMaskGBuffer: 15
+    - _StencilWriteMaskMV: 41
     - _Stiffness: 1
     - _SubsurfaceMask: 1
     - _SubsurfaceMask0: 1
@@ -939,11 +939,15 @@ Material:
     - _useThreadMap: 1
     m_Colors:
     - Color_782f4f92b5b247b5b46f05a69c80f52a: {r: 0, g: 0, b: 0, a: 1}
-    - Color_7b285f7a86794c35a1635e8d4854c648: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+    - Color_7b285f7a86794c35a1635e8d4854c648: {r: 0.8679245, g: 0.8679245, b: 0.8679245,
+        a: 1}
     - Color_83777D09: {r: 0.51886785, g: 0.51886785, b: 0.51886785, a: 0}
-    - Color_86fe059d81b547afa23f22a9407774ad: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 0.20392157}
-    - DiffusionProfile_261f48f1fbc94ccbafc421414859c159_Asset: {r: 0, g: 0, b: 0, a: 0}
-    - DiffusionProfile_bfbe0deb8ec4428a9cfcdb968651903c_Asset: {r: 0, g: 0, b: 0, a: 0}
+    - Color_86fe059d81b547afa23f22a9407774ad: {r: 0.8018868, g: 0.8018868, b: 0.8018868,
+        a: 0.20392157}
+    - DiffusionProfile_261f48f1fbc94ccbafc421414859c159_Asset: {r: 0, g: 0, b: 0,
+        a: 0}
+    - DiffusionProfile_bfbe0deb8ec4428a9cfcdb968651903c_Asset: {r: 0, g: 0, b: 0,
+        a: 0}
     - _BASE_COLOR: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor0: {r: 1, g: 1, b: 1, a: 1}
@@ -963,7 +967,8 @@ Material:
     - _ClearcoatNormalMap_SO: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
-    - _DiffusionProfileAsset: {r: -0.000007653921, g: -0.00000016005775, b: 2.6779203e+26, a: -0.0002498825}
+    - _DiffusionProfileAsset: {r: -0.000007653921, g: -0.00000016005775, b: 2.6779203e+26,
+        a: -0.0002498825}
     - _DiffusionProfileAsset0: {r: 0, g: 0, b: 0, a: 0}
     - _DiffusionProfileAsset1: {r: 0, g: 0, b: 0, a: 0}
     - _DiffusionProfileAsset2: {r: 0, g: 0, b: 0, a: 0}
