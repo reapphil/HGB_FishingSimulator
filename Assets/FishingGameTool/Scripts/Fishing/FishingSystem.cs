@@ -53,6 +53,8 @@ namespace FishingGameTool.Fishing
         [InfoBox("LayerMask used to determine on which layer fishing is allowed.")]
         public LayerMask _fishingLayer;
         public FishingBaitData _bait;
+        private FishingBaitData _baitForever;
+
 
         [Space ,BetterHeader("Loot Settings", 20) ,InfoBox("Select the method of handling loot catching:\n\n- \"SpawnItem\": Creates a game object " +
             "upon successfully catching the loot.\n- \"InvokeEvent\": Triggers a designated event upon successfully catching the loot.")]
@@ -114,6 +116,7 @@ namespace FishingGameTool.Fishing
         private void Awake()
         {
             _catchCheckIntervalTimer = _advanced._catchCheckInterval;
+            _baitForever = _bait;
         }
 
         private void Update()
@@ -195,7 +198,7 @@ namespace FishingGameTool.Fishing
                         float lootWeight = Random.Range(_advanced._caughtLootData._weightRange._minWeight, _advanced._caughtLootData._weightRange._maxWeight);
                         _advanced._lootWeight = lootWeight;
 
-                        _bait = null;
+                        _bait = _baitForever;
                     }
                 }
 
