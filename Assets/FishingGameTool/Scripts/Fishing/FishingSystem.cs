@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using FishingGameTool.CustomAttribute;
+using UnityEngine.InputSystem;
 
 namespace FishingGameTool.Fishing
 {
@@ -90,6 +91,11 @@ namespace FishingGameTool.Fishing
         [HideInInspector]
         public bool _castFloat = false;
 
+        [SerializeField]
+        public InputActionReference _leftAction;
+        [SerializeField]
+        public InputActionReference _rightAction;
+
         #region PRIVATE VARIABLES
 
         private float _catchCheckIntervalTimer;
@@ -113,10 +119,30 @@ namespace FishingGameTool.Fishing
 
 #endif
 
+        static InputAction GetInputAction(InputActionReference actionReference)
+        {
+        #pragma warning disable IDE0031 // Use null propagation -- Do not use for UnityEngine.Object types
+            return actionReference != null ? actionReference.action : null;
+        #pragma warning restore IDE0031
+        }
+
         private void Awake()
         {
             _catchCheckIntervalTimer = _advanced._catchCheckInterval;
             _baitForever = _bait;
+
+            var leftAction = GetInputAction(_leftAction);
+            if (leftAction != null)
+            {
+                leftAction.started += HandleCastInput;
+            }
+
+            var rightAction = GetInputAction(_rightAction);
+            if(rightAction != null)
+            {
+                rightAction.started += HandleAttractInput;
+            }
+
         }
 
         private void Update()
@@ -127,7 +153,7 @@ namespace FishingGameTool.Fishing
                 CastFloat();
             }
 
-            HandleInput();
+            //HandleInput(); //Should not be needed anymore, i hope :))
         }
 
         #region AttractFloat
@@ -605,8 +631,18 @@ namespace FishingGameTool.Fishing
 
         private void HandleInput()
         {
-            _attractInput = Input.GetButton("Fire2");
-            _castInput = Input.GetButton("Fire1");
+            _attractInput = Input.GetButton("Fire2");// current: Right click, TODO: Controller "pulling in"
+            _castInput = Input.GetButton("Fire1"); //current: Left click, TODO: Controller "throwing out"
+        }
+
+        private void HandleCastInput(InputAction.CallbackContext context)
+        {
+            _castInput = true;
+        }
+
+        private void HandleAttractInput(InputAction.CallbackContext context)
+        {
+            _attractInput = true;
         }
     }
 }

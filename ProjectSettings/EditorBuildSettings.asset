@@ -27,4 +27,8 @@ EditorBuildSettings:
     path: Assets/Gaia User Data/Sessions/GS-20240422 - 232403/Terrain Scenes/Terrain_1_1-20240422
       - 232422.unity
     guid: d1617c4d92588754fb3d50f71c0bab89
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6464eacdfbeaee94ba286a65631f3731,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: dd8c0f187a3123546aa9abd6b8fb85a1,
+      type: 2}
