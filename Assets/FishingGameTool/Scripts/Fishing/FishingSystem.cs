@@ -134,13 +134,15 @@ namespace FishingGameTool.Fishing
             var leftAction = GetInputAction(_leftAction);
             if (leftAction != null)
             {
-                leftAction.started += HandleCastInput;
+                leftAction.performed += HandleCastInput;
+                leftAction.canceled += StopHandleCastInput;
             }
 
             var rightAction = GetInputAction(_rightAction);
             if(rightAction != null)
             {
-                rightAction.started += HandleAttractInput;
+                rightAction.performed += HandleAttractInput;
+                rightAction.canceled += StopHandleAttractInput;
             }
 
         }
@@ -154,6 +156,7 @@ namespace FishingGameTool.Fishing
             }
 
             //HandleInput(); //Should not be needed anymore, i hope :))
+
         }
 
         #region AttractFloat
@@ -637,12 +640,26 @@ namespace FishingGameTool.Fishing
 
         private void HandleCastInput(InputAction.CallbackContext context)
         {
+            Debug.Log("HandleCastInput " +context.action.name);
             _castInput = true;
+        }
+
+        private void StopHandleCastInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("stopHandleCastInput " + context.action.name);
+            _castInput = false;
         }
 
         private void HandleAttractInput(InputAction.CallbackContext context)
         {
+            Debug.Log("HandleAttractInput " + context.action.name);
             _attractInput = true;
+        }
+
+        private void StopHandleAttractInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("StopHandleAttractInput " + context.action.name);
+            _attractInput = false;
         }
     }
 }

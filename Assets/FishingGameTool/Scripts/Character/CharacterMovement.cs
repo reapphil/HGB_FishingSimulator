@@ -122,7 +122,7 @@ namespace FishingGameTool.Example
 
         private void AnimationControl(Vector3 dir)
         {
-            _animator.SetFloat("Walk", dir.magnitude);
+            //_animator.SetFloat("Walk", dir.magnitude);
         }
 
         private bool IsGrounded()

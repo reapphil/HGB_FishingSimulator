@@ -37596,13 +37596,13 @@ PrefabInstance:
         type: 3}
       propertyPath: _leftAction
       value: 
-      objectReference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f,
+      objectReference: {fileID: 6495987117815137305, guid: c348712bda248c246b8c49b3db54643f,
         type: 3}
     - target: {fileID: 3198763510494151447, guid: ea1d495f775ba504d9c3f825439a0883,
         type: 3}
       propertyPath: _rightAction
       value: 
-      objectReference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
+      objectReference: {fileID: 59067968617577670, guid: c348712bda248c246b8c49b3db54643f,
         type: 3}
     - target: {fileID: 4322980120443630174, guid: ea1d495f775ba504d9c3f825439a0883,
         type: 3}
@@ -37614,11 +37614,21 @@ PrefabInstance:
       propertyPath: m_AllowMSAA
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5562875081725731988, guid: ea1d495f775ba504d9c3f825439a0883,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5805428056053020474, guid: ea1d495f775ba504d9c3f825439a0883,
         type: 3}
       propertyPath: _fppCamera
       value: 
       objectReference: {fileID: 214912825}
+    - target: {fileID: 5805428056053020474, guid: ea1d495f775ba504d9c3f825439a0883,
+        type: 3}
+      propertyPath: _moveSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5805428056053020474, guid: ea1d495f775ba504d9c3f825439a0883,
         type: 3}
       propertyPath: _tppCamera
@@ -37632,6 +37642,11 @@ PrefabInstance:
     - target: {fileID: 7381331683676951941, guid: ea1d495f775ba504d9c3f825439a0883,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440879200306296670, guid: ea1d495f775ba504d9c3f825439a0883,
+        type: 3}
+      propertyPath: _isLineBreakable
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -47951,6 +47966,16 @@ PrefabInstance:
       propertyPath: near clip plane
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 58445280694286476, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153982007679157697, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
       propertyPath: m_Name
@@ -48011,10 +48036,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1748222016861356527, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190828208922718286, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626757739553014894, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5456733348963664102, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
       propertyPath: m_RaycastMask.m_Bits
       value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739245880472075158, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
