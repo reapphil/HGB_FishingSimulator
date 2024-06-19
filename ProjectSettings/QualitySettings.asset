@@ -30,7 +30,7 @@ QualitySettings:
     useLegacyDetailDistribution: 1
     vSyncCount: 1
     lodBias: 1
-    maximumLODLevel: 0
+    maximumLODLevel: 3
     enableLODCrossFade: 1
     streamingMipmapsActive: 1
     streamingMipmapsAddAllCameras: 1
