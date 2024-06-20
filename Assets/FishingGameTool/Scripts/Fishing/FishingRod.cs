@@ -44,6 +44,8 @@ namespace FishingGameTool.Fishing.Rod
         [ShowVariable("_showDebugOption")]
         public bool _lootCaught = false;
 
+        public GameObject _controllerToFollow;
+
         #region PRIVATE VARIABLES
 
         private Animator _animator;
@@ -76,11 +78,25 @@ namespace FishingGameTool.Fishing.Rod
         {
             CalculateBend();
             FishingLine();
+            FollowController();
         }
 
-        #region CalculateBend
+        Vector3 lastPos = Vector3.zero;
+        Quaternion lastRot = Quaternion.identity;
+        private void FollowController()
+        {
+            if ((lastPos != Vector3.zero && lastRot != Quaternion.identity))
+            {
+                this.gameObject.transform.SetPositionAndRotation(Vector3.Lerp(lastPos, _controllerToFollow.transform.position, Time.deltaTime* 0.5f), Quaternion.Lerp(lastRot, _controllerToFollow.transform.rotation, Time.deltaTime * 0.5f));
+            }
+            lastPos = _controllerToFollow.transform.position;
+            lastRot = _controllerToFollow.transform.rotation;
+        }
 
-        private void CalculateBend()
+
+            #region CalculateBend
+
+            private void CalculateBend()
         {
             Vector2 bend = Vector2.zero;
 
